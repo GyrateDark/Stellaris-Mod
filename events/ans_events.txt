@@ -12,7 +12,7 @@ country_event = {
 		country = {
 			every_spaceport = {
 				limit = {
-					has_spaceport_module = SOMETHING
+					has_spaceport_module = Slave_Assembly_Network_System
 				}
 				root = { change_variable = {
 						which = number_slave_modules
@@ -21,7 +21,7 @@ country_event = {
 			prev = {
 				every_spaceport = {
 					limit = {
-						has_spaceport_module = SOMETHING
+						has_spaceport_module = Master_Assembly_Network_System
 					}
 					if = { 
 						limit = {
