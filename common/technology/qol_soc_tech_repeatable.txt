@@ -26,7 +26,7 @@ tech_repeatable_improved_terraforming_speed = {
 	weight = @repeatableTechWeight
 	
 	weight_modifier = {
-		factor = @repatableTechFactor
+		factor = @repeatableTechFactor
 	}
 	
 	ai_weight = {
