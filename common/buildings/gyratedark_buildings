@@ -153,7 +153,7 @@ gyratedark_building_shipyard_2 = {
 	}
 }
 
-building_shipyard_3 = {
+gyratedark_building_shipyard_3 = {
 	base_buildtime = @b3time
     is_listed = no
 	
@@ -217,7 +217,7 @@ building_shipyard_3 = {
 	}
 }
 
-building_shipyard_4 = {
+gyratedark_building_shipyard_4 = {
 	base_buildtime = @b4time
     is_listed = no
 	
@@ -281,7 +281,7 @@ building_shipyard_4 = {
 	}
 }
 
-building_shipyard_5 = {
+gyratedark_building_shipyard_5 = {
 	base_buildtime = @b5time
     is_listed = no
 	
@@ -300,7 +300,7 @@ building_shipyard_5 = {
 	}
     
     planet_modifier = {
-        spaceport_ship_build_speed_mult = 1.1
+        spaceport_ship_build_speed_mult = 1.25
     }
 	
 	required_resources = {
@@ -309,6 +309,7 @@ building_shipyard_5 = {
 	
 	prerequisites = {
 		"tech_mining_network_4"
+        "tech_assembly_network_system"
 	}
 	
 	allow = {
