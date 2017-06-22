@@ -8,7 +8,7 @@ tech_gyratedark_orbital_mining_laser = {
 	prerequisites = { "tech_space_construction" }
 	weight = @tier1weight1
 	
-	# ## unlock orbital building - solar panel network
+	# ## unlock orbital building - orbital mining laser
 	
 	weight_modifier = {
 		modifier = {
