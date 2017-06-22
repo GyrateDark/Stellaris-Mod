@@ -35,7 +35,7 @@ solar_panel_network = {
 		minerals = 75
 	}	
 	
-	produced_resources = {
+	planet_modifier = {
 		tile_resource_energy_mult = 0.10
 	}
 }
@@ -61,17 +61,21 @@ hydroponic_farms = {
 }
 
 orbital_mining_laser = {
-	icon = "GFX_orbital_fracking_cannon"
+	icon = "GFX_orbital_mining_laser"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 180
-	prerequisites = { "tech_orbital_mining_laser" }
+	prerequisites = { "tech_gyratedark_orbital_mining_laser" }
 	spaceport_level = 1
 	
 	cost = {
 		minerals = 75
 	}	
 	
-	produced_resources = {
+	required_resources = {
+		energy = 1
+	}
+	
+	planet_modifier = {
 		tile_resource_minerals_mult = 0.10
 	}
 }
