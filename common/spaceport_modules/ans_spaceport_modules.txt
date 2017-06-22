@@ -1,9 +1,9 @@
-Master_Assembly_Network_System = {
-	icon = "Fancy_Placeholder"   
+master_assembly_network_system = {
+	icon = "GFX_master_assembly_network_system"
 	#Need a graphic
 	section = "NETWORKING_SPACEPORT_SECTION"
 	construction_days = 360
-	#prerequisites = { "tech_doctrine_fleet_support" }
+	#prerequisites = { "tech_assembly_network_system" }
 	spaceport_level = 6
 	empire_unique = yes
 	cost = {
@@ -22,12 +22,12 @@ Master_Assembly_Network_System = {
 	}
 }
 
-Slave_Assembly_Network_System = {
-	icon = "Fancy_Placeholder_Dos"   
+slave_assembly_network_system = {
+	icon = "GFX_slave_assembly_network_system"
 	#Need a graphic
 	section = "NETWORKING_SPACEPORT_SECTION"
 	construction_days = 180
-	#prerequisites = { "tech_doctrine_fleet_support" }
+	#prerequisites = { "tech_assembly_network_system" }
 	spaceport_level = 6
 	empire_unique = no
 	
