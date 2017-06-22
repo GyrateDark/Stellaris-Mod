@@ -11,7 +11,7 @@ master_assembly_network_system = {
 	}
 	
 	modifier = {
-		spaceport_ship_build_speed_mult = 0.5
+		spaceport_ship_build_time_mult = -1.00
 	}
 	
 	ai_weight = {
@@ -29,20 +29,16 @@ slave_assembly_network_system = {
 	construction_days = 180
 	#prerequisites = { "tech_assembly_network_system" }
 	spaceport_level = 6
+	empire_unique = no
 	
 	cost = {
 		minerals = 250
 	}
-    
-    modifier = {
-        spaceport_ship_build_time_mult = 1000
-    }
 	
-    country_modifier = {
-		all_technology_research_speed = 0.2
-        spaceport_ship_build_speed_mult = 1.00
+	modifier = {
+		spaceport_ship_build_time_mult = 1.00
 	}
-    
+	
 	ai_weight = {
 		modifier = {
 			factor = 1
