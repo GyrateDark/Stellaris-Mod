@@ -1,0 +1,66 @@
+namespace = assembly_network_system
+
+### Master spaceport modifier
+country_event = {
+	id = assembly_network_system.1
+	hide_window = yes
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	immediate = {
+		root = { set_variable = { 
+				which = number_slave_modules 
+				value = 0
+			} }
+		country = {
+			every_spaceport = {
+				limit = {
+					has_spaceport_module = slave_assembly_network_system
+				}
+				root = { change_variable = {
+						which = number_slave_modules
+						value = 1
+				}	}
+			prev = {
+				every_spaceport = {
+					limit = {
+						has_spaceport_module = master_assembly_network_system
+					}
+					if = { 
+						limit = {
+							root = { check_variable = { 
+								which = number_slave_modules
+								value = 0
+							} }
+						}
+						add_modifier = {
+							modifier = qol_master_slave_shipyards_0
+						}
+						root = { change_variable = {
+							which = number_slave_modules
+							value = 0
+						} }
+					}
+					
+					if = { 
+						limit = {
+							root = { check_variable = { 
+								which = number_slave_modules
+								value = 1
+							} }
+						}
+						add_modifier = {
+							modifier = qol_master_slave_shipyards_1
+						}
+						root = { change_variable = {
+							which = number_slave_modules
+							value = 0
+						} }
+					}
+				}
+				
+			}
+			}
+		}
+	}
+}
