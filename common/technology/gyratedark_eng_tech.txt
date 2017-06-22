@@ -22,6 +22,18 @@ tech_gyratedark_orbital_mining_laser = {
 				has_trait = "leader_trait_expertise_industry"
 			}
 		}
+        modifier = {
+			factor = 2
+			years_passed > 4
+		}
+		modifier = {
+			factor = 3
+			years_passed > 7
+		}
+		modifier = {
+			factor = 4
+			years_passed > 10
+		}
 	}
 	
 	ai_weight = {
