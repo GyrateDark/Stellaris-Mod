@@ -1,0 +1,31 @@
+
+tech_assembly_network_system = {
+	cost = @tier2cost4
+	area = engineering
+	tier = 2
+	category = { voidcraft }	
+	prerequisites = { "tech_battleship_yard" "tech_cruiser_yard" }
+	weight = @tier2weight4
+		
+	## unlock assembly_network_system
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
