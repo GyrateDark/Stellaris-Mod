@@ -1,0 +1,343 @@
+@b0effect = 1
+
+@b1time = 210
+@b1cost = 60
+@b1effect = 2
+@b1upkeep = 1
+
+@b2time = 180
+@b2cost = 90
+@b2effect = 3
+@b2upkeep = 1.5
+
+@b3time = 180
+@b3cost = 120
+@b3effect = 4
+@b3upkeep = 2
+
+@b4time = 180
+@b4cost = 150
+@b4effect = 5
+@b4upkeep = 2.5
+
+@b5time = 180
+@b5cost = 180
+@b5upkeep = 3
+
+gyratedark_building_shipyard_1 = {
+	base_buildtime = @b1time
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}
+	
+	cost = {
+		minerals = @b1cost
+	}
+	
+	produced_resources = {
+		minerals = @b0effect
+	}
+    
+    planet_modifier = {
+        spaceport_ship_build_speed_mult = 0.2
+    }
+	
+	required_resources = {
+		energy = @b1upkeep
+	}	
+	
+	upgrades = {
+		gyratedark_building_shipyard_2
+	}
+	
+	prerequisites = {
+		"tech_basic_industry"
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_allow = {
+		NOR = {
+			has_resource = {
+				type = sr_betharian
+				amount > 0
+			}	
+			has_resource = {
+				type = sr_alien_pets
+				amount > 0
+			}				
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+gyratedark_building_shipyard_2 = {
+	base_buildtime = @b2time
+    is_listed = no
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}
+	
+	cost = {
+		minerals = @b2cost
+	}
+	
+	produced_resources = {
+		minerals = @b1effect
+	}
+    
+    planet_modifier = {
+        spaceport_ship_build_speed_mult = 0.4
+    }
+	
+	required_resources = {
+		energy = @b2upkeep
+	}	
+	
+	upgrades = {
+		gyratedark_building_shipyard_3
+	}
+	
+	prerequisites = {
+		"tech_mining_network_2"
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_allow = {
+		NOR = {
+			has_resource = {
+				type = sr_betharian
+				amount > 0
+			}	
+			has_resource = {
+				type = sr_alien_pets
+				amount > 0
+			}				
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+gyratedark_building_shipyard_3 = {
+	base_buildtime = @b3time
+    is_listed = no
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}
+	
+	cost = {
+		minerals = @b3cost
+	}
+	
+	produced_resources = {
+		minerals = @b2effect
+	}
+    
+    planet_modifier = {
+        spaceport_ship_build_speed_mult = 0.6
+    }
+	
+	required_resources = {
+		energy = @b3upkeep
+	}	
+	
+	upgrades = {
+		gyratedark_building_shipyard_4
+	}
+	
+	prerequisites = {
+		"tech_mining_network_3"
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_allow = {
+		NOR = {
+			has_resource = {
+				type = sr_betharian
+				amount > 0
+			}	
+			has_resource = {
+				type = sr_alien_pets
+				amount > 0
+			}				
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+gyratedark_building_shipyard_4 = {
+	base_buildtime = @b4time
+    is_listed = no
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}
+	
+	cost = {
+		minerals = @b4cost
+	}
+	
+	produced_resources = {
+		minerals = @b3effect
+	}
+    
+    planet_modifier = {
+        spaceport_ship_build_speed_mult = 0.8
+    }
+	
+	required_resources = {
+		energy = @b4upkeep
+	}	
+	
+	upgrades = {
+		gyratedark_building_shipyard_5
+	}
+	
+	prerequisites = {
+		"tech_mining_network_4"
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_allow = {
+		NOR = {
+			has_resource = {
+				type = sr_betharian
+				amount > 0
+			}	
+			has_resource = {
+				type = sr_alien_pets
+				amount > 0
+			}				
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+gyratedark_building_shipyard_5 = {
+	base_buildtime = @b5time
+    is_listed = no
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}
+	
+	cost = {
+		minerals = @b5cost
+	}
+	
+	produced_resources = {
+		minerals = @b4effect
+	}
+    
+    planet_modifier = {
+        spaceport_ship_build_speed_mult = 1.25
+    }
+	
+	required_resources = {
+		energy = @b5upkeep
+	}	
+	
+	prerequisites = {
+		"tech_mining_network_4"
+        "tech_assembly_network_system"
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_allow = {
+		NOR = {
+			has_resource = {
+				type = sr_betharian
+				amount > 0
+			}	
+			has_resource = {
+				type = sr_alien_pets
+				amount > 0
+			}				
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

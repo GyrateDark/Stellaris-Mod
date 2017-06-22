@@ -1,0 +1,30 @@
+
+#Orbital Mining Laser
+tech_gyratedark_orbital_mining_laser = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_space_construction" }
+	weight = @tier1weight1
+	
+	# ## unlock orbital building - orbital mining laser
+	
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+}

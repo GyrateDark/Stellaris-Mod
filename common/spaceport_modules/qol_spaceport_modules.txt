@@ -1,0 +1,106 @@
+#ai_weight - checks that required resources are available by AI will be made in code for performance reasons
+
+#modifiers that can be added from modules
+#"modifier", category: MODIFIER_CATEGORY_SPACEPORT. things that affect the builder part of the spaceport. like construction costs and speeds
+#"orbit_modifier", category: MODIFIER_CATEGORY_FLEET | MODIFIER_CATEGORY_SHIP. applied on all orbiting fleets and ships
+#"planet_modifier", category: MODIFIER_CATEGORY_PLANET | MODIFIER_CATEGORY_POP | MODIFIER_CATEGORY_TILE. affects the planet
+#"station_modifier", category: MODIFIER_CATEGORY_FLEET | MODIFIER_CATEGORY_SHIP. affects the ship part of the spaceport. like health and armor
+#"ship_modifier", category: MODIFIER_CATEGORY_SHIP. affects all ships that are built by this space port
+	
+projectile_weapon = {
+	icon = "GFX_spaceport_modules"
+	icon_frame = 1
+	initial = yes
+	initial_only = yes
+	replaceable = no
+	section = "CORE_SPACEPORT_SECTION"
+	component_set = "SPACEPORT_MASS_DRIVER"
+	prerequisites = { "tech_mass_drivers_1" }
+	ai_weight = { weight = 0 }
+}
+
+
+#################
+#### LEVEL 1 ####
+#################
+
+solar_panel_network = {
+	icon = "GFX_solar_panel_network"
+	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
+	construction_days = 180
+	prerequisites = { "tech_solar_panel_network" }
+	spaceport_level = 1
+	
+	cost = {
+		minerals = 75
+	}	
+	
+	planet_modifier = {
+		tile_resource_energy_mult = 0.10
+	}
+}
+
+hydroponic_farms = {
+	icon = "GFX_spaceport_module_hydroponic_farms"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	construction_days = 180
+	prerequisites = { "tech_orbital_hydroponics" }
+	spaceport_level = 1
+	
+	cost = {
+		minerals = 100
+	}
+	
+	required_resources = {
+		energy = 1
+	}
+	
+	planet_modifier = {
+		tile_resource_food_mult = 0.10
+	}
+}
+
+orbital_mining_laser = {
+	icon = "GFX_orbital_mining_laser"
+	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
+	construction_days = 180
+	prerequisites = { "tech_gyratedark_orbital_mining_laser" }
+	spaceport_level = 1
+	
+	cost = {
+		minerals = 75
+	}	
+	
+	required_resources = {
+		energy = 1
+	}
+	
+	planet_modifier = {
+		tile_resource_minerals_mult = 0.10
+	}
+}
+
+#################
+#### LEVEL 2 ####
+#################
+
+
+#################
+#### LEVEL 3 ####
+#################
+
+
+#################
+#### LEVEL 4 ####
+#################
+
+
+#################
+#### LEVEL 5 ####
+#################
+
+
+#################
+#### LEVEL 6 ####
+#################
+
