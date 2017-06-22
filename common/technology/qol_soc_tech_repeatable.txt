@@ -44,3 +44,33 @@ tech_repeatable_improved_terraforming_speed = {
 		terraform_speed_mult = 0.25
 	}
 }
+
+tech_repeatable_improved_unity = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 3
+	category = { statecraft }
+	levels = -1
+	prerequisites = { "tech_autocurating_vault" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repeatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		country_resource_unity_mult = 0.05
+	}
+}
