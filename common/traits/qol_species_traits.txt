@@ -16,7 +16,7 @@ trait_perfection = {
 		"trait_robust"
 	}
     
-    allowed_classes = { HUM MAM REP AVI ART MOL FUN PLANT ROBOT MACHINE }
+    allowed_archetypes = { BIOLOGICAL ROBOT MACHINE }
 	
 	modifier = {
 		pop_consumer_goods_mult = -0.1
