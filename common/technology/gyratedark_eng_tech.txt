@@ -1,3 +1,5 @@
+@tier1cost1 = 360
+@tier1weight1 = 100
 
 #Orbital Mining Laser
 tech_gyratedark_orbital_mining_laser = {

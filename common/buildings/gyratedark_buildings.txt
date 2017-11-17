@@ -397,6 +397,7 @@ gyratedark_building_shipyard_5 = {
 	
 	prerequisites = {
 		"tech_mining_network_4"
+        "tech_assembly_network_system"
 	}
 	
 	allow = {

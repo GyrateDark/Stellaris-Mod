@@ -6,18 +6,6 @@
 #"planet_modifier", category: MODIFIER_CATEGORY_PLANET | MODIFIER_CATEGORY_POP | MODIFIER_CATEGORY_TILE. affects the planet
 #"station_modifier", category: MODIFIER_CATEGORY_FLEET | MODIFIER_CATEGORY_SHIP. affects the ship part of the spaceport. like health and armor
 #"ship_modifier", category: MODIFIER_CATEGORY_SHIP. affects all ships that are built by this space port
-	
-projectile_weapon = {
-	icon = "GFX_spaceport_modules"
-	icon_frame = 1
-	initial = yes
-	initial_only = yes
-	replaceable = no
-	section = "CORE_SPACEPORT_SECTION"
-	component_set = "SPACEPORT_MASS_DRIVER"
-	prerequisites = { "tech_mass_drivers_1" }
-	ai_weight = { weight = 0 }
-}
 
 
 #################
